@@ -1,0 +1,16 @@
+.app {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  height: 200px;
+  width: 200px;
+  background-color: rgba(52, 51, 51, 0.384);
+}
+
+.botao-teste{
+    height: ;
+    width: 20px;
+    color: aquamarine;
+}
