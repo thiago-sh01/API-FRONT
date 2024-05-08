@@ -1,5 +1,5 @@
 import "./modalCreateUser.css";
-import ButtonModal from "../modalButton/modalButton";
+import ModalButton from "../modalButton/modalButton";
 import React from "react";
 import { TextField } from "@mui/material";
 
@@ -11,9 +11,9 @@ function ModalCreateUser() {
 
   return (
 
-    <div>
-    <button onClick={openModal}>Abrir Modal</button>
-    <ButtonModal isOpen={isOpen} onClose={closeModal}>
+    <div className="modal">
+    <button className="btn-open" onClick={openModal}>Abrir Modal</button>
+    <ModalButton isOpen={isOpen} onClose={closeModal}>
       <h2>Meu Formulário</h2>
       <form>
         <label>
@@ -22,7 +22,7 @@ function ModalCreateUser() {
         </label>
         <button type="submit">Enviar</button>
       </form>
-    </ButtonModal>
+    </ModalButton>
   </div>
   )
 }

@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import ModalCreateUser from './components/modalCreateUser/modalCreateUser'
+import ModalButton from './components/modalButton/modalButton'
 import './global.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(

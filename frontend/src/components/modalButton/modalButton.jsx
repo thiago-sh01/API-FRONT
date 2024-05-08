@@ -1,18 +1,17 @@
 import "./modalButton.css";
 import React from "react";
 
-const Modal = ({ isOpen, onClose, children }) => {
-    if (!isOpen) return null;
-
-
+const ModalButton = ({ isOpen, onClose, children }) => {
+  if (!isOpen) return null;
+  console.log(isOpen);
   return (
-    <div className="modal-overlay">
-      <div className="modal">
-        <button onClick={onClose}>Fechar</button>
-        {children}
-      </div>
-    </div>
+    <>
+      <button className="btn-close" onClick={onClose}>
+        Fechar
+      </button>
+      {children}
+    </>
   );
 };
 
-export default Modal;
+export default ModalButton;
